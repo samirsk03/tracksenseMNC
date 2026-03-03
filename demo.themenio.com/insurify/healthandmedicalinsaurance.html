@@ -1,0 +1,522 @@
+<html lang="zxx" style="scroll-behavior: smooth;">
+
+<head>
+    <title>Track Sense Solution</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Softnio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/trackIcon.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" type="text/css" href="css/vendor.bundle.css">
+    <link id="style-css" rel="stylesheet" type="text/css" href="css/style.css">
+    <style type="text/css">
+        /* Only Demo Purpose */
+        .colorPanel {
+            margin: 0px;
+            padding: 5px;
+            position: fixed;
+            z-index: 100;
+            min-width: 20px;
+            border-radius: 0 3px 3px 0;
+            background-color: #4b00a0;
+            top: 35%;
+        }
+
+        .colorPanel ul {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            display: none;
+        }
+
+        .colorPanel ul li {
+            display: block;
+            margin-top: 10px;
+        }
+
+        .colorPanel ul a {
+            display: block;
+            width: 20px;
+            height: 20px;
+            border: #fff 1px solid;
+        }
+
+        .colorPanel a.cart {
+            border-bottom: 1px solid rgba(255, 255, 255, .3);
+            margin-bottom: 6px;
+            padding-bottom: 8px;
+            display: block;
+        }
+
+        #cpToggle {
+            display: block;
+            height: 30px;
+            width: 20px;
+            line-height: 30px;
+            background-size: cover;
+        }
+
+        .cp-custom {
+            padding: 12px;
+        }
+
+        .cp-custom #cpToggle {
+            background: none;
+        }
+
+        .cp-custom i {
+            font-size: 15px;
+            color: #fff;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="site-body style-v1">
+    <!-- Header -->
+    <header class="site-header header-s1 is-sticky">
+
+        <!-- Navbar -->
+        <div class="navbar navbar-primary">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="./">
+                    <img class="logo logo-dark" alt="" src="image/trackIcon.png" srcset="image/trackIcon.png 2x">
+                    <img class="logo logo-light" alt="" src="image/trackIcon.png" srcset="image/trackIcon.png 2x">
+                </a>
+                <!-- #end Logo -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainnav"
+                        aria-expanded="false">
+                        <span class="sr-only">Menu</span>
+                    </button>
+                    <!-- Q-Button for Mobile -->
+                    <div class="quote-btn"><a class="btn" href="get-a-quote.html"><span>Get A Quote</span></a></div>
+                </div>
+                <!-- MainNav -->
+                <nav class="navbar-collapse collapse nav-mobile" id="mainnav">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown has-children"><a href="#" class="dropdown-toggle">Home</a>
+                        </li>
+                        <li class="has-children">
+                            <a href="#about">About Us </a>
+                        </li>
+                        <li class="has-children">
+                            <a href="#service"> Services </a>
+                        </li>
+                        <li><a href="#testimonial">Testimonials</a></li>
+                        <li class=""><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- #end MainNav -->
+            </div>
+        </div>
+        <!-- #end Navbar -->
+        <!-- Banner/Slider -->
+        <div id="slider" class="banner banner-slider carousel slide carousel-fade">
+            <!-- Wrapper for Slides -->
+            <div class="carousel-inner">
+                <!-- // -->
+                <div class="item">
+                    <div class="fill" style="background-image:url('image/radission-us-_XeQ8XEWb4Q-unsplash.jpg');">
+                        <div class="banner-content">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="banner-text light">
+                                        <h4 class="title-intro-sub"></h4>
+                                        <h2 class="title-intro">Transforming Healthcare Operations with Precision and Care</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- // -->
+                <div class="item active">
+                    <div class="fill" style="background-image:url('image/radission-us-_XeQ8XEWb4Q-unsplash.jpg');">
+                        <div class="banner-content">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="banner-text light">
+                                        <h2 class="title-intro">Smarter Systems. Better Care. Stronger Results.</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- // -->
+                <div class="item">
+                    <div class="fill" style="background-image:url('image/radission-us-_XeQ8XEWb4Q-unsplash.jpg');">
+                        <div class="banner-content">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="banner-text light">
+                                        <h2 class="title-intro">Your Trusted Partner in Healthcare Excellence</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- // -->
+            </div>
+            <!-- Arrow Controls -->
+            <a class="left carousel-control" href="#slider" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#slider" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- #end Banner/Slider -->
+    </header>
+    <!-- End Header -->
+
+    <!-- Content -->
+    <div id="service" class="section section-content section-pad">
+        <div class="container">
+            <div class="content row">
+
+                <div class="row row-column-md">
+                    <div class="col-md-4 col-sm-6">
+                        <h5 class="color-primary">Our Priority.</h5>
+                        <div class="image"><img src="image/photo-md-j.jpg" alt=""></div>
+                        <p>TrackSense Solutions is a dedicated healthcare consultancy and customer service partner committed to enhancing operational efficiency and patient-centered care. We specialize in providing strategic guidance, process optimization, and tailored support solutions to healthcare providers, clinics, and medical organizations.</p>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="image"><img src="image/photo-md-d.jpg" alt=""></div>
+                        <p>At TrackSense Solutions, we understand the complexities of the healthcare environment. Our team works closely with clients to streamline workflows, improve service delivery, strengthen patient engagement, and ensure compliance with industry standards. By combining industry expertise with responsive customer support, we help healthcare organizations focus on what matters most — delivering quality care.</p>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <h5 class="color-primary">Our Healthcrae Consultancy Plans Include:</h5>
+                        <ul class="list-style checkmark">
+                            <li><strong>Healthcare Operations Consulting</strong></li>
+                            <li><strong>Client Experience & Customer Service Management</strong></li>
+                            <li><strong>Process Optimization & Workflow Automation</strong> </li>
+                            <li><strong>Compliance & Quality Improvement Support</strong></li>
+                            <li><strong>Staff Training & Performance Development</strong></li>
+                        </ul>
+                        <p><a href="#" class="block btn btn-alt">Need to talk to us directly?</a></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End Content -->
+
+
+    <!-- Content -->
+    <div id="about" class="section section-contents section-pad has-bg-image">
+        <div class="container">
+            <div class="content row">
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h4 style="color: #fff;">Who We Are</h4>
+                        <h2 style="color: #fff;">A Trusted Healthcare Consultancy & Service Partner</h2>
+                        <p style="color: #fff;">TrackSense Solutions is a dedicated healthcare consultancy and customer service firm committed to improving operational efficiency and enhancing patient experiences. With strong industry expertise, we support hospitals, clinics, and healthcare organizations in building streamlined systems that strengthen service delivery and overall performance.
+
+                            <br> We work closely with healthcare providers to optimize workflows, improve patient communication, and implement structured processes that drive measurable results. Through strategic guidance and responsive support solutions, we help organizations operate more effectively — allowing them to focus on delivering quality care with confidence.
+                        </p>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="imagebg bg-image-loaded"
+            style="background-image: url(&quot;image/pexels-olia-danilevich-8145264.jpg&quot;);">
+            <img src="image/pexels-olia-danilevich-8145264.jpg" alt="">
+        </div>
+    </div>
+    <!-- End content -->
+
+    <!-- Content -->
+    <div id="testimonials" class="section section-quotes section-pad has-bg dark-filter light has-bg-image"
+        style="padding:80px 0; position:relative;">
+
+        <div class="container">
+            <div class="content row">
+
+                <h2 class="center" style="text-align:center; color:#ffffff; font-weight:600; margin-bottom:50px;">
+                    What Our Clients Say About Our HealthCare and Consultancy Services
+                </h2>
+
+                <div class="testimonials style-v2">
+                    <div id="testimonial" class="quotes-slider wide-sm">
+
+                        <!-- ONLY KEEP THIS STRUCTURE -->
+                        <div class="owl-carousel loop has-carousel owl-theme" data-items="1" data-loop="true"
+                            data-dots="true" data-auto="true" data-navs="true">
+
+                            <!-- Slide 1 -->
+<div class="item" style="text-align:center; padding:20px;">
+    <div class="quotes"
+        style="background:#ffffff; padding:40px; border-radius:10px; box-shadow:0 10px 30px rgba(0,0,0,0.15);">
+        <div class="quotes-text">
+            <p style="font-size:18px; line-height:1.8; color:#333;">
+                “TrackSense Solutions helped us streamline our hospital operations and improve patient communication. Their strategic approach significantly enhanced our service efficiency.”
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Slide 2 -->
+<div class="item" style="text-align:center; padding:20px;">
+    <div class="quotes"
+        style="background:#ffffff; padding:40px; border-radius:10px; box-shadow:0 10px 30px rgba(0,0,0,0.15);">
+        <div class="quotes-text">
+            <p style="font-size:18px; line-height:1.8; color:#333;">
+                “The team provided exceptional consultancy and customer service training for our staff. We’ve seen noticeable improvements in patient satisfaction and workflow management.”
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Slide 3 -->
+<div class="item" style="text-align:center; padding:20px;">
+    <div class="quotes"
+        style="background:#ffffff; padding:40px; border-radius:10px; box-shadow:0 10px 30px rgba(0,0,0,0.15);">
+        <div class="quotes-text">
+            <p style="font-size:18px; line-height:1.8; color:#333;">
+                “Professional, reliable, and highly knowledgeable. TrackSense Solutions transformed our internal processes and helped us deliver a better overall patient experience.”
+            </p>
+        </div>
+    </div>
+</div>
+
+                        </div>
+                        <!-- End Carousel -->
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Background -->
+        <div class="section-bg imagebg bg-image-loaded"
+            style="background-image:url('image/plx-quotes.jpg'); background-size:cover; background-position:center; opacity:0.3; position:absolute; top:0; left:0; width:100%; height:100%; z-index:-1;">
+        </div>
+
+    </div>
+    </div>
+    <!-- End content -->
+
+    <!-- End Section -->
+    <!-- Content -->
+    <div style="padding:60px 0; background:#f9f9f9;">
+        <div style="width:100%; max-width:1200px; margin:0 auto; padding:0 15px;">
+            <div style="display:flex; flex-direction:column; align-items:center;">
+
+                <div style="max-width:900px; text-align:center;">
+                    <h3 style="font-size:28px; margin-bottom:20px;">
+                        <strong>TrackSense Solutions helps YOUR</strong><br>Needs and Requirements
+                    </h3>
+
+                    <div style="display:flex; flex-wrap:wrap; justify-content:center; margin-top:40px; gap:30px;">
+
+                        <div style="flex:1 1 300px; max-width:350px;">
+                            <div
+                                style="width:120px; height:120px; margin:0 auto 20px; border-radius:50%; overflow:hidden;">
+                                <img src="image/health.webp" alt="" style="width:100%; height:100%; object-fit:cover;">
+                            </div>
+                            <h5 style="color:#007bff; font-size:18px; margin-bottom:15px;">
+                                Healthcare Operations Consulting
+                            </h5>
+                            <!-- <p style="font-size:14px; line-height:1.6; color:#555;">
+                                Comprehensive medical coverage for individuals against hospitalization, emergency
+                                treatments, and related healthcare expenses. Ensures financial protection with cashless
+                                hospital access and affordable premiums.
+                            </p> -->
+                        </div>
+
+                        <div style="flex:1 1 300px; max-width:350px;">
+                            <div
+                                style="width:120px; height:120px; margin:0 auto 20px; border-radius:50%; overflow:hidden;">
+                                <img src="image/family.jpg" alt="" style="width:100%; height:100%; object-fit:cover;">
+                            </div>
+                            <h5 style="color:#007bff; font-size:18px; margin-bottom:15px;">
+                                Client Experience & Customer Service Management
+                            </h5>
+                            <!-- <p style="font-size:14px; line-height:1.6; color:#555;">
+                                One health insurance policy covering your entire family under a single sum insured. A
+                                cost-effective solution that provides complete medical protection for all family
+                                members.
+                            </p> -->
+                        </div>
+
+                        <div style="flex:1 1 300px; max-width:350px;">
+                            <div
+                                style="width:120px; height:120px; margin:0 auto 20px; border-radius:50%; overflow:hidden;">
+                                <img src="image/busi.webp" alt="" style="width:100%; height:100%; object-fit:cover;">
+                            </div>
+                            <h5 style="color:#007bff; font-size:18px; margin-bottom:15px;">
+                                Staff Training & Performance Development
+                            </h5>
+                            <!-- <p style="font-size:14px; line-height:1.6; color:#555;">
+                                Health insurance solutions designed for businesses to cover employees with
+                                hospitalization and medical benefits. Enhances employee satisfaction while providing
+                                reliable healthcare coverage.
+                            </p> -->
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End content -->
+
+    <!-- Client logo -->
+    <!-- <div class="section section-logos section-pad-sm">
+        <div class="container">
+            <div class="content row">
+                <h3 class="heading-sm-lead ucap center">COMPANIES WE REPRESENT</h3>
+                <div class="owl-carousel loop logo-carousel style-v1 owl-theme owl-loaded">
+
+
+
+
+
+
+
+
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage"
+                            style="transform: translate3d(-405px, 0px, 0px); transition: all; width: 1620px;">
+                            <div class="owl-item cloned" style="width: 81.25px; margin-right: 20px;">
+                                <div class="logo-item"><img alt="" width="140" height="55"
+                                        src="image/bajaj logo.png"></div>
+                            </div>
+                            <div class="owl-item cloned" style="width: 81.25px; margin-right: 20px;">
+                                <div class="logo-item"><img alt="" width="140" height="55"
+                                        src="image/star11-removebg-preview.png"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-controls">
+                        <div class="owl-nav">
+                            <div class="owl-prev" style="">prev</div>
+                            <div class="owl-next" style="">next</div>
+                        </div>
+                        <div class="owl-dots" style="display: block;">
+                            <div class="owl-dot active"><span></span></div>
+                            <div class="owl-dot"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div> -->
+    <!-- End Section -->
+
+    <!-- Footer Widget-->
+    <div id="contact" class="footer-widget section-pad-md">
+        <div class="container">
+            <div class="row">
+
+                <div class="widget-row row">
+                    <div class="footer-col col-md-3 col-sm-6 res-m-bttm">
+                        <!-- Each Widget -->
+                        <div class="wgs wgs-footer wgs-menu">
+                            <h5 class="wgs-title">Our Services</h5>
+                            <div class="wgs-content">
+                                <ul class="menu">
+                                    <li><a href="#">Healthcare Operations Consulting</a></li>
+                                    <li><a href="#">Patient Experience & Customer Service Management</a></li>
+                                    <li><a href="#">Process Optimization & Workflow Automation</a></li>
+                                    <li><a href="#">Compliance & Quality Improvement Support</a></li>
+                                    <li><a href="#">Staff Training & Performance Development</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- End Widget -->
+                    </div>
+
+                    <div class="footer-col col-md-3 col-sm-6">
+                        <!-- Each Widget -->
+                        <div class="wgs wgs-footer">
+                            <div class="wgs-content">
+                                <div class="footer-logo"><img src="image/trackIcon.png" alt="">
+                                </div>
+                                <ul class="contact-info">
+                                    <li>Email: sales@tracksensesolutions.com<br>
+                                    </li>
+                                    <li><span>Phone No</span>:+91 99606 70630</li>
+                                    <li>1st fl, L&T Heights , above Curve Furniture, near Vijay Sales, Iman Nagar,
+                                        Kondhwa, Pune Maharashtra-411028</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <!-- End Widget -->
+                    </div>
+
+                </div><!-- Widget Row -->
+
+            </div>
+        </div>
+    </div>
+    <!-- End Footer Widget -->
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="site-copy col-sm-7">
+                    <p>Copyright © 2026 tracksensesolutions</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End Copyright -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Owl JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Owl Init -->
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                items: 1,
+                loop: true,
+                autoplay: true,
+                dots: true,
+                nav: true
+            });
+        });
+    </script>
+
+    <!-- Preloader !active please if you want -->
+    <!-- <div id="preloader"><div id="status">&nbsp;</div></div> -->
+    <!-- Preloader End -->
+
+    <!-- JavaScript Bundle -->
+    <script src="js/jquery.bundle.js"></script>
+    <!-- Theme Script init() -->
+    <div id="color-switch" class="colorPanel cp-custom">
+        <ul>
+            <li><a href="css/style.css" class="linka" style="background-color: rgb(37, 128, 254);"></a></li>
+            <li><a href="css/style-blue.css" class="linka" style="background-color: rgb(10, 123, 191);"></a></li>
+            <li><a href="css/style-navy.css" class="linka" style="background-color: rgb(7, 55, 136);"></a></li>
+            <li><a href="css/style-royal.css" class="linka" style="background-color: rgb(44, 68, 189);"></a></li>
+            <li><a href="css/style-orange.css" class="linka" style="background-color: rgb(239, 149, 53);"></a></li>
+            <li><a href="css/style-red.css" class="linka" style="background-color: rgb(244, 34, 37);"></a></li>
+            <li><a href="css/style-maroon.css" class="linka" style="background-color: rgb(170, 36, 78);"></a></li>
+            <li><a href="css/style-green.css" class="linka" style="background-color: rgb(125, 186, 47);"></a></li>
+        </ul>
+    </div>
+    <!-- End script -->
+
+</body>
+
+</html>
